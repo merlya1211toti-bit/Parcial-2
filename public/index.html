@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Smart Avatar Experience</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<main class="shell">
+
+<header class="hero">
+  <div>
+    <small>E-SHOPPER & METAVERSO · SMART AVATAR EXPERIENCE</small>
+    <h1 id="name">NEXA</h1>
+    <p id="tagline"></p>
+  </div>
+  <span class="status">● AGENTE ACTIVO</span>
+</header>
+
+<section class="grid">
+
+  <article class="panel avatar-panel">
+    <div class="panel-head">
+      <div>
+        <small>IDENTIDAD DIGITAL</small>
+        <h2 id="role"></h2>
+      </div>
+      <span id="brand" class="chip"></span>
+    </div>
+
+    <div id="viewer" class="viewer">
+      <div id="loader">Cargando avatar 3D...</div>
+      <div id="fallback" class="fallback">
+        Agrega <b>avatar.fbx</b> dentro de /public
+      </div>
+    </div>
+
+    <div class="meta">
+      <div>
+        <small>PÚBLICO</small>
+        <strong id="audience"></strong>
+      </div>
+      <div>
+        <small>MODO</small>
+        <strong>IA + 3D</strong>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel chat-panel">
+    <div class="panel-head">
+      <div>
+        <small>CONVERSACIÓN</small>
+        <h2>Habla con <span id="chatName">NEXA</span></h2>
+      </div>
+      <button id="reset">Nueva conversación</button>
+    </div>
+
+    <div id="messages" class="messages"></div>
+
+    <form id="form">
+      <textarea
+        id="input"
+        maxlength="900"
+        placeholder="Escribe tu pregunta..."
+        required></textarea>
+      <button>Enviar</button>
+    </form>
+  </article>
+
+</section>
+
+<section class="cards">
+  <article>
+    <small>CAPACIDADES</small>
+    <ul id="capabilities"></ul>
+  </article>
+
+  <article>
+    <small>LÍMITES</small>
+    <ul id="limits"></ul>
+  </article>
+
+  <article>
+    <small>ARQUITECTURA</small>
+    <p>Avatar 3D + interfaz web + Node.js + API de IA.</p>
+  </article>
+</section>
+
+</main>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
